@@ -69,8 +69,6 @@ bool Dialog::showOpenfile(RenderWindow* window, char buf[])
         window->setTitle(title);
         while (fgets(buf, MAX_LINE, fp) != NULL)
         {
-            len = strlen(buf);
-            buf[len - 1] = '\0';
             return true;
         }
         fclose(fp);
